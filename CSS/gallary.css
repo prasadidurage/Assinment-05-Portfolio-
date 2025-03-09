@@ -1,0 +1,38 @@
+.gallary-photo {
+    width: 200px;
+    height: 200px;
+    border: 5px solid gray;
+    object-fit: cover;
+  }
+
+  .gallary-conyainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  #gallary{
+    margin-left: 20px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .gallary-photo {
+        width: 300px;
+        height: 300px;
+        border: 5px solid gray;
+        object-fit: cover
+    }
+
+    .gallary-conyainer{
+         display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+      }
+
+  }

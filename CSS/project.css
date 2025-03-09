@@ -1,0 +1,121 @@
+.card{
+    border: 1px solid black;
+    background-color: rgb(112, 144, 134);
+    color: white;
+
+  }
+  .project-container{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;   
+  }
+
+  .project-img {
+    margin: 12px;
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.project-description{
+  margin: 12px;
+  opacity: 1;
+}
+
+/* .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  
+  
+} */
+
+#project{
+  margin: 20px;
+}
+.feedback{
+  margin-top: 20px;
+  display: flex;
+}
+
+#feedback-photo{
+  width: 200px;
+}
+#owner{
+position: relative;
+bottom: 50px;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after ,.card::before{
+
+  content: '';
+  position: absolute;
+  height: 100%;
+  width:100%;
+  background-image: conic-gradient(from var(--angle),transparent 50%,rgba(172, 10, 13, 0.426) ) ;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+
+.card::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from{
+    --angle:0deg;
+  }
+
+  to{
+    --angle:360deg;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+
+.feedback{
+  margin-top: 20px;
+  display: flex;
+}
+
+#feedback-photo{
+  width: 150px;
+  height: 150px;
+}
+#owner{
+position: relative;
+bottom: 10px;
+}
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #owner{
+    position: relative;
+    bottom: 10px;
+    }
+   
+}
+

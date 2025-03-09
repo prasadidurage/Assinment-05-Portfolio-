@@ -1,0 +1,62 @@
+#resume{
+    margin-left: 20px;
+  }
+  .Education{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .year{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color:white;
+    border: 2px solid rgb(39, 125, 39);
+    transition:2s  background-color ease-in-out;
+    box-shadow: 5px 5px 15px rgba(12, 14, 12, 0.3); 
+  }
+  .explain{
+    opacity: 0;
+  }
+
+  .year:hover{
+   scale: 1.2;
+   .explain{
+    opacity: 1;
+   }
+   background-color: rgb(232, 247, 165);
+   
+
+  }
+
+  #cv-button{
+    width: 150px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 300px ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition:2s  background-color ease; 
+  }
+
+  #cv-button:hover{
+    background-color: rgb(6, 42, 14);
+    color: white;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .Education{
+        display: grid;
+        grid-template-rows: (2,1fr);
+        row-gap: 25px;
+
+    }
+
+    #cv-button{
+        margin-left: 80px ;    }
+
+  }

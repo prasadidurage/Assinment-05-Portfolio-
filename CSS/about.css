@@ -1,0 +1,133 @@
+.about-container{
+    display: flex;
+   
+  }
+
+  #detail-container{
+    margin-left: 12px;
+  
+  }
+
+
+  #Personal-detail{
+    display: flex;
+    background-color: rgb(199, 235, 212);
+    margin-top: 12px;
+
+  }
+
+  .quection{
+    display: flex;
+    gap: 20px;
+  }
+
+  #Skill h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.progress-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.p-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.p-bar p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.p-bar span {
+  font-size: 14px;
+  color: #333;
+}
+
+#about-pic{
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+progress.presentage-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 700px; /* Ensures it takes full width */      height: 20px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e4d6d6;
+  animation: fillProgress 2s ease-in-out forwards;
+}
+progress.presentage-bar::-webkit-progress-bar {
+  background-color: #ddd;
+}
+progress.presentage-bar::-webkit-progress-value {
+  background-color: #746dd4;
+}
+progress.presentage-bar::-moz-progress-bar {
+  background-color: #31694a;
+}
+
+.presentage{
+  display: flex;
+  gap: 10px;
+}
+
+@keyframes fillProgress {
+from {
+width: 0%;
+}
+}
+
+@media screen and (max-width: 425px) {
+  .about-container{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  #Personal-detail{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 235, 212);
+    margin-top: 12px;
+
+  }
+
+  .progress-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  progress.presentage-bar::-moz-progress-bar {
+    background-color: #31694a;
+  }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .about-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-pic{
+    height: 120vh;
+    object-fit: cover;
+  }
+  .progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  progress.presentage-bar::-moz-progress-bar {
+    background-color: #31694a;
+  }
+}

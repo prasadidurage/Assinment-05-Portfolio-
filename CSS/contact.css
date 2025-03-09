@@ -1,0 +1,104 @@
+.contact-img{
+    width: 25px;
+    height: 25px;
+  }
+  .img-background{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(178, 228, 204);  
+    border: 1px solid rgb(30, 140, 30);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .c-detail{
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .c-contact{
+    margin-left: 20px;
+  }
+  .location{
+    width:280px;
+    height: 280px;
+    border: 1px solid wheat;
+  }
+
+  #c-location{
+    margin-top: 50px;
+  }
+  
+  #contact{
+    margin: 20px;
+  }
+.detail-container{
+  border: 2px solid rgb(199, 211, 203);
+  padding-left: 20px;
+  width: 500px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.up{
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+
+}
+.c-quection{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .c-quection input,
+.c-quection textarea {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid rgb(199, 211, 203);
+    border-radius: 5px;
+}
+
+ #submit{
+  margin-top: 12px;
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid black;
+    background-color: rgb(232, 239, 236);
+    color: rgb(11, 35, 16);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s background-color ease-in-out ;
+
+ }
+
+ #submit:hover {
+    background-color: rgb(25, 50, 42);
+    color: white;
+}
+ #contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  
+ }
+ .email{
+  width: 700px;
+  border: 2px solid rgb(199, 211, 203);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  
+ }
+
+ 
+
+ #email-container{
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
+     margin: 22px;
+
+
+  
+ }
