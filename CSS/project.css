@@ -68,18 +68,23 @@ bottom: 50px;
   position: absolute;
   height: 100%;
   width:100%;
-  background-image: conic-gradient(from var(--angle),transparent 50%,rgba(172, 10, 13, 0.426) ) ;
+background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    rgba(205, 255, 22, 0.6) 60%,
+    rgba(13, 169, 104, 0.6) 100%
+  );  
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
   padding: 3px;
-  border-radius: 10px;
+  border-radius: 20px;
   animation: 3s spin linear infinite;
 }
 
 .card::before{
-  filter: blur(1.5rem);
+  filter: blur(1.9rem);
   opacity: 0.5;
 }
 
